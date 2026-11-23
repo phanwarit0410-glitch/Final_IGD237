@@ -57,6 +57,30 @@ public class ScoreManager : MonoBehaviour
         OnScoreChanged?.Invoke();
     }
 
+    private void OnEnable()
+    {
+        GameEvents.OnFoodServed += HandleFoodServed;
+    }
+
+    private void OnDisable()
+    {
+        GameEvents.OnFoodServed -= HandleFoodServed;
+    }
+
+    private void HandleFoodServed(bool correct, RecipeData recipe, int money)
+    {
+        if (correct)
+        {
+            AddCorrectOrder();
+        }
+        else
+        {
+            AddWrongOrder();
+        }
+    }
+
+
+
     private void OnDestroy()
     {
         if (Instance == this)
