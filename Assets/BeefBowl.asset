@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9d3f23681a5d7a4c8e3a86a0e441b45, type: 3}
+  m_Name: BeefBowl
+  m_EditorClassIdentifier: Assembly-CSharp::RecipeData
+  id: BeefBowl
+  displayName: BeefBowl
+  icon: {fileID: 6998326874662246324, guid: c030c638a3f124a4483271f0f0b2e5c8, type: 3}
+  ingredients:
+  - ingredient: {fileID: 11400000, guid: d02f7457fa28fc243b5260cac6454cbc, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 63a20a9b1d3f11f46a8e1e2224427d12, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 7ef883983d9f38e45bddbc9e1d5a2a01, type: 2}
+    amount: 1
+  - ingredient: {fileID: 11400000, guid: 7813d79ca0e4a87488e0924c9015674b, type: 2}
+    amount: 1
+  price: 10
+  cookTime: 0
